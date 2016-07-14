@@ -20,20 +20,21 @@ var invariant = require('invariant');
 var keyMirror = require('keymirror');
 var resolveAssetSource = require('react-native/Libraries/Image/resolveAssetSource');
 
+var {PropTypes} = React;
 var {
-  ActivityIndicatorIOS,
-  EdgeInsetsPropType,
-  StyleSheet,
-  Text,
-  View,
-  WebView,
-  requireNativeComponent,
-  UIManager,
-  NativeModules: {
-    WebViewBridgeManager
-  }
+    ActivityIndicatorIOS,
+    EdgeInsetsPropType,
+    StyleSheet,
+    Text,
+    View,
+    WebView,
+    requireNativeComponent,
+    UIManager,
+    NativeModules: {
+        WebViewBridgeManager
+    },
+    findNodeHandle
 } = ReactNative;
-var { PropTypes } = React;
 
 var BGWASH = 'rgba(255,255,255,0.8)';
 var RCT_WEBVIEWBRIDGE_REF = 'webviewbridge';
